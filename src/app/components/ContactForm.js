@@ -29,45 +29,11 @@ const ContactForm = () => {
         }))
     }
  
-    const [status,setStatus]=useState(null)
- 
-    const handleSubmitt = async () => {
-            try {
-
-
-           const response = await fetch('/api/contact' ,{
-            method : 'POST',
-            headers :{'Content_Type' : 'application/json'},
-            body : JSON.stringify({
-                username : user.username,
-                email : user.email,
-                phone : user.phone,
-                message : user.message
-            })
-
-           })
-
-           if(response.status == 200){
-            setUser({
-                username:'',
-                email:'',
-                phone:'',
-                message:''
-            }) 
-             setStatus('success')
-           } else{
-            setStatus('error')
-           }
-            
-            } catch(e){
-                console.log(e);
-            }
-    }
-
+   
     return (
         <>
 
-            <form className={styles.contact_form} onSubmit={handleSubmitt}>
+            <form className={styles.contact_form} >
                 <div className={styles.input_field}>
                     <label htmlFor="username">
                         Enter Your Name :
@@ -134,8 +100,6 @@ const ContactForm = () => {
                 <div>
 
 
-                    {status === 'sucess' && <p className={styles.success_msg}>thank you from your message</p>}
-                    {status === 'error' && <p className={styles.error_msg}>there was an error while submitting</p>}
 
                     <button type="submit" className={buttonStyle.btn} >
                         Send Message
