@@ -63,7 +63,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 
@@ -74,7 +73,7 @@
 .contact_form{
     max-width: 48rem;
     min-width: 32rem;
-    padding: 3.2rem;
+    padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     text-align: left;
 }
@@ -131,6 +130,7 @@
         grid-template-columns: 1fr;
         gap: 5rem;
         margin: 6rem auto;
+
     }
 
 }
