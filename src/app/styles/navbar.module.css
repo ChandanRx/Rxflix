@@ -1,13 +1,13 @@
 .main_header{
     padding: 0 4rem;
-    height: 7rem;
+    height: 6.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: none;
     outline: none;
     /*background-color: yellow;*/
-    /*background: linear-gradient(-45deg, #a8e48a, #1eb6d9, #f2d3f7);*/
+    background: linear-gradient(-45deg, #000000, rgb(74, 78, 79), rgb(98, 87, 98));
     background-size: 400% 400%;
     box-shadow: rgba(255, 255, 255, 0) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
@@ -15,6 +15,11 @@
 
 .navbar_brand {
     text-align: left;
+}
+
+.image{
+    filter: drop-shadow(5px 5px 5px rgb(207, 34, 34)(46, 37, 37));
+    border: #000000;
 }
 
 .navbarList {
@@ -33,7 +38,7 @@
 .navbarList a {
     font-weight: bold;
     font-size: 1.8rem;
-    color: #161617;
+    color: #ffffff;
     padding: 1.3rem 0rem;
     margin: 0;
     position: relative;
@@ -169,4 +174,4 @@
         transform: translateX(0);
         z-index: 999;
     }
-}
+} 
